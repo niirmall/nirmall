@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Nirmal | Official Site</title>
+
+  <style>
+    /* RESET */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+        url("background.jpg") center/cover fixed no-repeat;
+      color: #111;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 900;
+      font-size: 1.4rem;
+      letter-spacing: -1px;
+    }
+.logo-img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+    
+
+    nav .links a {
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: url("hero.jpg") center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      background: rgba(255,255,255,0.9);
+      padding: 3rem;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 900;
+      letter-spacing: -2px;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-inline: auto;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 0.9rem 1.8rem;
+      background: #111;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 999px;
+    }
+
+    /* SECTION */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1400px;
+      margin: auto;
+      background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.92),
+        rgba(245,245,245,0.88)
+      );
+      backdrop-filter: blur(10px) saturate(120%);
+      box-shadow: 0 40px 100px rgba(0,0,0,0.25);
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 0.9s ease;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+      box-shadow: 0 60px 140px rgba(0,0,0,0.35);
+    }
+
+    section h2 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+    }
+
+    /* SOCIAL */
+    .social {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .social a {
+      padding: 2.5rem;
+      border: 1px solid #e5e5e5;
+      font-size: 1.3rem;
+      font-weight: 800;
+      transition: all 0.35s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .social a:hover {
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .social a.whatsapp:hover {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+    }
+
+    .social a.instagram:hover {
+      background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+      );
+    }
+
+    .social a.pinterest:hover {
+      background: linear-gradient(135deg, #E60023, #B0001A);
+    }
+
+    .social a.spotify:hover {
+      background: #1DB954;
+      color: #000;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+<div class="logo">
+  <img src="logo.jpg"  class="logo-img">
+  <span>NIRMAL</span>
+</div>
+
+
+
+
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#social">Social</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero" id="about">
+    <div class="hero-content">
+      <h1>heyy!!</h1>
+      <p>
+        i am nirmal,  
+        Follow the journey with me across all platforms.
+      </p>
+      <a class="cta" href="#social">Explore</a>
+    </div>
+  </div>
+
+  <!-- SOCIAL -->
+  <section id="social">
+    <h2>Follow the journey </h2>
+    <div class="social">
+      <a class="whatsapp" href="https://wa.me/918281848559" target="_blank">
+        <span class="icon">💬</span> WhatsApp
+      </a>
+      <a class="instagram" href="https://instagram.com/nir3all" target="_blank">
+        <span class="icon">📸</span> Instagram
+      </a>
+      <a class="pinterest" href="https://pinterest.com/yourusername" target="_blank">
+        <span class="icon">📌</span> Pinterest
+      </a>
+      <a class="spotify" href="https://open.spotify.com/" target="_blank">
+        <span class="icon">🎵</span> Spotify
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 ·   I think all rights are reserved
+  </footer>
+
+  
+  <!-- SCROLL REVEAL -->
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("show");
+      });
+    }, { threshold: 0.15 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
